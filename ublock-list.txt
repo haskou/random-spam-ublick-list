@@ -1,0 +1,34 @@
+! Xataka
+! Remove spam articles
+www.xataka.com##:xpath(//*[contains(@href,"eva-rodriguez")]/ancestor::article)
+www.xataka.com##:xpath(//*[contains(text(),"Webedia Brand Services")]/ancestor::article)
+www.xataka.com##:xpath(//*[contains(text(),"Por si te lo perdiste")]/ancestor::article)
+www.xataka.com##:xpath(//*[contains(text(),"Xataka Basics")]/ancestor::article)
+www.xataka.com##:xpath(//*[contains(@itemprop, 'sponsor')]/ancestor::article)
+www.xataka.com##DIV[class="ad-box"]
+www.xataka.com##.ad 
+www.xataka.com##DIV[class="related-alts-container"]
+www.xataka.com##.section-cross 
+www.xataka.com##.home-video-stream-container 
+www.xataka.com##.head-favicons-container 
+www.xataka.com##.js-branded-tabs 
+www.xataka.com##.js-foot
+www.xataka.com##.section-recent-aside
+! Remove random spam
+www.xataka.com###relatedHorizontalPosts
+www.xataka.com###editorialRecommendedPosts
+www.xataka.com##.set-container
+! Remove Eva Rodriguez posts
+www.xataka.com##:xpath(//*[contains(@class, "abstract-title")]/a[contains(text(),"oferta")]/ancestor::article)
+www.xataka.com##:xpath(//*[contains(@class, "abstract-title")]/a[contains(text(),"Black Friday")]/ancestor::article)
+! Remove podcast 
+www.xataka.com##:xpath(//*[contains(@class, "abstract-title")]/a[contains(text(),"Xataka Live")]/ancestor::article)
+www.xataka.com##:xpath(//*[contains(@class, "abstract-title")]/a[contains(text(),"despeja la x")]/ancestor::article)
+! Remove videos
+www.xataka.com##.js-dailymotion
+
+
+# Reddit
+www.reddit.com##:xpath(//*[contains(text(),"Top livestream")]/parent::*/parent::*/parent::*/parent::div)
+www.reddit.com##:xpath(//*[contains(text(),"Stream popular")]/parent::*/parent::*/parent::*/parent::div)
+
